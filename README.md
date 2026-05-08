@@ -15,4 +15,8 @@ The project idea is a beginner-friendly fitness and nutrition website with worko
 
 ## Hosting
 
-This site is designed to be hosted with GitHub Pages from the repository root.
+This site is hosted with GitHub Pages from the repository root.
+
+Live site: https://abenaitwe.github.io/fitlife-hub/
+
+Repository contribution notes: [CONTRIBUTIONS.md](CONTRIBUTIONS.md)

@@ -243,6 +243,13 @@ h3 {
   margin-bottom: 28px;
 }
 
+.section-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
 .feature-grid,
 .team-grid {
   display: grid;
