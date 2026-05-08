@@ -11,6 +11,7 @@ The project idea is a beginner-friendly fitness and nutrition website with worko
 - Feature overview
 - Small interactive recommendation area
 - Team contribution section
+- Team contribution documentation in `CONTRIBUTIONS.md`
 
 ## Hosting
 
