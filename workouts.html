@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitLife Hub | Workouts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><nav class="nav"><a class="brand" href="index.html"><span class="brand-mark">FH</span><span>FitLife Hub</span></a><button class="menu-toggle" type="button" aria-label="Open menu"><span></span><span></span><span></span></button><div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="workouts.html">Workouts</a><a href="nutrition.html">Nutrition</a><a href="blog.html">Blog</a><a href="auth.html">Login</a><a href="dashboard.html">Dashboard</a><a href="contact.html">Contact</a></div></nav></header>
+  <main>
+    <section class="container page-title">
+      <p class="eyebrow">Workout Modules</p>
+      <h1>Choose a simple routine for your current level.</h1>
+      <p class="lead">Select a level to view dynamic workout content, then use the timer for exercise sets and rest periods.</p>
+    </section>
+    <section class="section">
+      <div class="container split">
+        <div class="card">
+          <h2>Workout plan</h2>
+          <div class="tabs">
+            <button class="tab active" type="button" data-plan="beginner">Beginner</button>
+            <button class="tab" type="button" data-plan="intermediate">Intermediate</button>
+            <button class="tab" type="button" data-plan="advanced">Advanced</button>
+          </div>
+          <ul class="workout-list" id="workoutOutput"></ul>
+        </div>
+        <div class="timer-panel">
+          <h2>Workout Timer</h2>
+          <label for="timerMinutes">Duration</label>
+          <select id="timerMinutes">
+            <option value="1">1 minute</option>
+            <option value="5">5 minutes</option>
+            <option value="10">10 minutes</option>
+          </select>
+          <div class="timer-display" id="timerDisplay">01:00</div>
+          <div class="actions"><button class="button primary" id="timerStart" type="button">Start</button><button class="button ghost" id="timerReset" type="button">Reset</button></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><span>FitLife Hub</span><a href="dashboard.html">Track progress</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitLife Hub | Login and Registration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><nav class="nav"><a class="brand" href="index.html"><span class="brand-mark">FH</span><span>FitLife Hub</span></a><button class="menu-toggle" type="button" aria-label="Open menu"><span></span><span></span><span></span></button><div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="workouts.html">Workouts</a><a href="nutrition.html">Nutrition</a><a href="blog.html">Blog</a><a class="active" href="auth.html">Login</a><a href="dashboard.html">Dashboard</a><a href="contact.html">Contact</a></div></nav></header>
+  <main>
+    <section class="container page-title">
+      <p class="eyebrow">User Authentication Demo</p>
+      <h1>Create an account and track progress.</h1>
+      <p class="lead">The hosted GitHub Pages demo stores user data in the browser. PHP/MySQL files are included in the repository for a server deployment.</p>
+    </section>
+    <section class="section">
+      <div class="container grid-2">
+        <form class="form-card" id="registerForm">
+          <h2>Register</h2>
+          <div class="form-grid">
+            <div class="field full"><label for="name">Full name</label><input id="name" name="name" type="text" required></div>
+            <div class="field full"><label for="regEmail">Email</label><input id="regEmail" name="email" type="email" required></div>
+            <div class="field"><label for="regPassword">Password</label><input id="regPassword" name="password" type="password" minlength="6" required></div>
+            <div class="field"><label for="goal">Fitness goal</label><select id="goal" name="goal"><option>Weight loss</option><option>Strength</option><option>Endurance</option><option>Healthy lifestyle</option></select></div>
+          </div>
+          <button class="button primary" type="submit">Create account</button>
+          <p class="message" id="registerMessage"></p>
+        </form>
+        <form class="form-card" id="loginForm">
+          <h2>Login</h2>
+          <div class="form-grid">
+            <div class="field full"><label for="loginEmail">Email</label><input id="loginEmail" name="email" type="email" required></div>
+            <div class="field full"><label for="loginPassword">Password</label><input id="loginPassword" name="password" type="password" required></div>
+          </div>
+          <button class="button primary" type="submit">Login</button>
+          <p class="message" id="loginMessage"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><span>FitLife Hub</span><a href="dashboard.html">Open dashboard</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

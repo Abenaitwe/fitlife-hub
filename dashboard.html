@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitLife Hub | Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><nav class="nav"><a class="brand" href="index.html"><span class="brand-mark">FH</span><span>FitLife Hub</span></a><button class="menu-toggle" type="button" aria-label="Open menu"><span></span><span></span><span></span></button><div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="workouts.html">Workouts</a><a href="nutrition.html">Nutrition</a><a href="blog.html">Blog</a><a href="auth.html">Login</a><a class="active" href="dashboard.html">Dashboard</a><a href="contact.html">Contact</a></div></nav></header>
+  <main>
+    <section class="container page-title">
+      <p class="eyebrow">User Dashboard</p>
+      <h1>Progress tracking demo.</h1>
+      <p class="lead" id="dashboardWelcome">Loading your dashboard...</p>
+      <div class="actions" data-dashboard><button class="button primary" id="addWorkout" type="button">Add workout</button><button class="button secondary" id="addMeal" type="button">Add meal</button><button class="button ghost" id="addMinutes" type="button">Add 15 minutes</button><button class="button ghost" id="logout" type="button">Logout</button></div>
+    </section>
+    <section class="section" data-dashboard>
+      <div class="container grid-3">
+        <article class="stat-card"><h3>Workouts</h3><strong id="workoutCount">0</strong><span>completed sessions</span><div class="dashboard-bar"><span id="workoutBar"></span></div></article>
+        <article class="stat-card"><h3>Meals</h3><strong id="mealCount">0</strong><span>balanced meals recorded</span><div class="dashboard-bar"><span id="mealBar"></span></div></article>
+        <article class="stat-card"><h3>Active Minutes</h3><strong id="minuteCount">0</strong><span>minutes of movement</span><div class="dashboard-bar"><span style="--value: 45%"></span></div></article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><span>FitLife Hub</span><a href="auth.html">Register or login</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

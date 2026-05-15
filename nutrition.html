@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitLife Hub | Nutrition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><nav class="nav"><a class="brand" href="index.html"><span class="brand-mark">FH</span><span>FitLife Hub</span></a><button class="menu-toggle" type="button" aria-label="Open menu"><span></span><span></span><span></span></button><div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="workouts.html">Workouts</a><a class="active" href="nutrition.html">Nutrition</a><a href="blog.html">Blog</a><a href="auth.html">Login</a><a href="dashboard.html">Dashboard</a><a href="contact.html">Contact</a></div></nav></header>
+  <main>
+    <section class="container page-title">
+      <p class="eyebrow">Nutrition and Meal Plans</p>
+      <h1>Balanced food ideas using simple daily choices.</h1>
+      <p class="lead">The nutrition section focuses on proteins, carbohydrates, vitamins, fibre, and water so users understand the basics of a balanced meal.</p>
+    </section>
+    <section class="section">
+      <div class="container split">
+        <div class="card">
+          <h2>Meal suggestions</h2>
+          <div class="tabs">
+            <button class="tab active" type="button" data-meal="energy">Energy</button>
+            <button class="tab" type="button" data-meal="strength">Strength</button>
+            <button class="tab" type="button" data-meal="balance">Balance</button>
+          </div>
+          <ul class="meal-list" id="mealOutput"></ul>
+        </div>
+        <div class="feature-image"><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=80" alt="Healthy foods arranged on a table"></div>
+      </div>
+    </section>
+    <section class="section"><div class="container grid-3"><article class="card"><h3>Carbohydrates</h3><p>Give the body energy for school, work, and exercise.</p></article><article class="card"><h3>Proteins</h3><p>Support body repair and muscle growth after workouts.</p></article><article class="card"><h3>Water</h3><p>Improves hydration and supports healthy daily activity.</p></article></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><span>FitLife Hub</span><a href="workouts.html">View workouts</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
