@@ -263,6 +263,46 @@ function setupContact() {
   render();
 }
 
+function setupPhpDemo() {
+  const register = document.getElementById("phpRegisterForm");
+  const contact = document.getElementById("phpContactForm");
+
+  async function postForm(form, endpoint, messageId) {
+    const response = await fetch(endpoint, {
+      method: "POST",
+      body: new FormData(form),
+    });
+    const data = await response.json();
+    showMessage(messageId, data.message || "Request completed.", !data.success);
+  }
+
+  if (register) {
+    const email = document.getElementById("phpEmail");
+    email.value = `demo${Date.now()}@fitlife.test`;
+    register.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      try {
+        await postForm(register, "backend/register.php", "phpRegisterMessage");
+      } catch (error) {
+        showMessage("phpRegisterMessage", "Could not reach PHP. Start Apache and MySQL in XAMPP, then open through localhost.", true);
+      }
+    });
+  }
+
+  if (contact) {
+    const email = document.getElementById("phpContactEmail");
+    email.value = `visitor${Date.now()}@fitlife.test`;
+    contact.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      try {
+        await postForm(contact, "backend/contact.php", "phpContactMessage");
+      } catch (error) {
+        showMessage("phpContactMessage", "Could not reach PHP. Start Apache and MySQL in XAMPP, then open through localhost.", true);
+      }
+    });
+  }
+}
+
 setupNavigation();
 setupPlanTabs("[data-plan]", plans, "workoutOutput");
 setupPlanTabs("[data-meal]", mealPlans, "mealOutput");
@@ -270,3 +310,4 @@ setupTimer();
 setupAuth();
 setupDashboard();
 setupContact();
+setupPhpDemo();
