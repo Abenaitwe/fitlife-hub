@@ -21,6 +21,6 @@ FitLife Hub: A Fitness and Nutrition Web Platform
 | Ainomugisha Flavia | 2025/BIT/035/PS | Business model and partnership ideas |
 | Abenaitwe Ian | 2025/BIT/243/PS | GitHub setup, prototype hosting, and site integration |
 
-## Current Prototype Scope
+## Current Project Scope
 
-The current GitHub Pages version is not the final full project. It is a small progress prototype prepared for the class update. It demonstrates the project title, aim, proposed website features, starter recommendations, and team contribution structure.
+The current version includes the main pages, responsive front-end, JavaScript interactivity, form validation, progress dashboard demo, contact feedback demo, and PHP/MySQL backend source files for server deployment.
